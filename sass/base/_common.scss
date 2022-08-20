@@ -1,0 +1,36 @@
+html {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    transition: color var(--transition-dur-and-func);
+}
+
+.link:hover,
+.link:focus,
+.lik:active {
+    color: var(--accent-color);
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: var(--text-size);
+    letter-spacing: 0.03em;
+
+    background-color: var(--primary-background);
+    color: var(--primary-color);
+}
