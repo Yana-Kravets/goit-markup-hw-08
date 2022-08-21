@@ -124,7 +124,9 @@
                 <ul class="list wedo-list">
                     <li class="wedo-item">
                         <div class="wedo-thumb">
-                            <img class="wedo-img" src="./images/studio/computer.jpg" alt="Макбук на столе" width="370"
+                            <img class="wedo-img" 
+                            srcset="./images/studio/wedo/computer@2x.jpg 2x, ./images/studio/wedo/computer@3x.jpg 3x"
+                            src="./images/studio/wedo/computer.jpg" alt="Макбук на столе" width="370"
                                 height="294">
                             <div class="wedo-actions">
                                 <p class="wedo-text">Десктопные приложения</p>
@@ -133,7 +135,9 @@
                     </li>
                     <li class="wedo-item">
                         <div class="wedo-thumb">
-                            <img class="wedo-img" src="./images/studio/phone.jpg" alt="Телефон в руке" width="370" height="294">
+                            <img class="wedo-img" 
+                            srcset="./images/studio/wedo/phone@2x.jpg 2x, ./images/studio/wedo/phone@3x.jpg 3x"
+                            src="./images/studio/wedo/phone.jpg" alt="Телефон в руке" width="370" height="294">
                             <div class="wedo-actions">
                                 <p class="wedo-text">Мобильные приложения</p>
                             </div>
@@ -141,7 +145,9 @@
                     </li>
                     <li class="wedo-item">
                         <div class="wedo-thumb">
-                            <img class="wedo-img" src="./images/studio/tablet.jpg" alt="Планшен в руке" width="370"
+                            <img class="wedo-img" 
+                            srcset="./images/studio/wedo/tablet@2x.jpg 2x, ./images/studio/wedo/tablet@3x.jpg 3x"
+                            src="./images/studio/wedo/tablet.jpg" alt="Планшен в руке" width="370"
                             height="294">
                             <div class="wedo-actions">
                                 <p class="wedo-text">Дизайнерские решения</p>
@@ -158,8 +164,19 @@
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="list team-list">
                     <li class="team-item">
-                        <img class="team-img" src="./images/studio/team-member1.jpg" alt="Игорь Демьяненко Product Designer"
-                            width="270" height="260">
+                        <picture>
+                            <source
+                            srcset="./images/studio/team/team-desktop1.jpg 1x, ./images/studio/team/team-desktop1@2x.jpg 2x, ./images/studio/team/team-desktop1@3x.jpg 3x"
+                            media="(min-width: 1200px)"/>
+                            <source
+                            srcset="./images/studio/team/team-tablet1.jpg 1x, ./images/studio/team/team-tablet1@2x.jpg 2x, ./images/studio/team/team-tablet1@3x.jpg 3x"
+                            media="(min-width: 768px)"/>
+                            <source
+                            srcset="./images/studio/team/team-phone1.jpg 1x, ./images/studio/team/team-phone1@2x.jpg 2x, ./images/studio/team/team-phone1@3x.jpg 3x"
+                            media="(min-width: 480px)"/>
+                            <img class="team-img" src="./images/studio/team/team-phone1.jpg" alt="Игорь Демьяненко Product Designer"
+                                width="270" height="260">
+                        </picture>
                         <div class="team-card-wrapper">
                             <h3 class="team-name">Игорь Демьяненко</h3>
                             <p class="team-profession">Product Designer</p>
@@ -196,8 +213,16 @@
                         </div>
                     </li>
                     <li class="team-item">
-                        <img class="team-img" src="./images/studio/team-member2.jpg" alt="Ольга Репина Frontend Developer"
-                            width="270" height="260">
+                        <picture>
+                            <source srcset="./images/studio/team/team-desktop2.jpg 1x, ./images/studio/team/team-desktop2@2x.jpg 2x, ./images/studio/team/team-desktop2@3x.jpg 3x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/studio/team/team-tablet2.jpg 1x, ./images/studio/team/team-tablet2@2x.jpg 2x, ./images/studio/team/team-tablet2@3x.jpg 3x"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images/studio/team/team-phone2.jpg 1x, ./images/studio/team/team-phone2@2x.jpg 2x, ./images/studio/team/team-phone2@3x.jpg 3x"
+                                media="(min-width: 480px)" />
+                            <img class="team-img" src="./images/studio/team/team-phone2.jpg" alt="Игорь Демьяненко Product Designer"
+                                width="270" height="260">
+                        </picture>
                         <div class="team-card-wrapper">
                             <h3 class="team-name">Ольга Репина</h3>
                             <p class="team-profession">Frontend Developer</p>
@@ -234,8 +259,16 @@
                         </div>
                     </li>
                     <li class="team-item">
-                        <img class="team-img" src="./images/studio/team-member3.jpg" alt="Николай Тарасов Marketing"
-                            width="270" height="260">
+                        <picture>
+                            <source srcset="./images/studio/team/team-desktop3.jpg 1x, ./images/studio/team/team-desktop3@2x.jpg 2x, ./images/studio/team/team-desktop3@3x.jpg 3x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/studio/team/team-tablet3.jpg 1x, ./images/studio/team/team-tablet3@2x.jpg 2x, ./images/studio/team/team-tablet3@3x.jpg 3x"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images/studio/team/team-phone3.jpg 1x, ./images/studio/team/team-phone3@2x.jpg 2x, ./images/studio/team/team-phone3@3x.jpg 3x"
+                                media="(min-width: 480px)" />
+                            <img class="team-img" src="./images/studio/team/team-phone3.jpg" alt="Игорь Демьяненко Product Designer"
+                                width="270" height="260">
+                        </picture>
                         <div class="team-card-wrapper">
                             <h3 class="team-name">Николай Тарасов</h3>
                             <p class="team-profession">Marketing</p>
@@ -272,8 +305,16 @@
                         </div>
                     </li>
                     <li class="team-item">
-                        <img class="team-img" src="./images/studio/team-member4.jpg" alt="Михаил Ермаков UI Designer"
-                            width="270" height="260">
+                        <picture>
+                            <source srcset="./images/studio/team/team-desktop4.jpg 1x, ./images/studio/team/team-desktop4@2x.jpg 2x, ./images/studio/team/team-desktop4@3x.jpg 3x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/studio/team/team-tablet4.jpg 1x, ./images/studio/team/team-tablet4@2x.jpg 2x, ./images/studio/team/team-tablet4@3x.jpg 3x"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images/studio/team/team-phone4.jpg 1x, ./images/studio/team/team-phone4@2x.jpg 2x, ./images/studio/team/team-phone4@3x.jpg 3x"
+                                media="(min-width: 480px)" />
+                            <img class="team-img" src="./images/studio/team/team-phone4.jpg" alt="Игорь Демьяненко Product Designer"
+                                width="270" height="260">
+                        </picture>
                         <div class="team-card-wrapper">
                             <h3 class="team-name">Михаил Ермаков</h3>
                             <p class="team-profession">UI Designer</p>
