@@ -539,7 +539,7 @@ body {
   height: 400px;
   margin-left: auto;
   margin-right: auto;
-  padding: 200px 0;
+  padding: 118px 0;
   text-align: center;
   background-color: var(--secondary-background);
   background-repeat: no-repeat;
@@ -548,6 +548,28 @@ body {
   background-size: 480px 400px;
 }
 
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  white-space: pre-line;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  color: var(--main-light);
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
+  .hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+  }
+}
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 479px), screen and (min-resolution: 192dpi) and (max-width: 479px), screen and (min-resolution: 2dppx) and (max-width: 479px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/studio/hero/hero-phone@2x.jpg");
@@ -594,57 +616,37 @@ body {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/studio/hero/hero-desktop@3x.jpg");
   }
 }
-.hero-title {
-  margin-top: 0;
-  margin-bottom: 30px;
-  white-space: pre-line;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-  letter-spacing: 0.06em;
-  color: var(--main-light);
+@media screen and (max-width: 479px) {
+  .page-about {
+    background-color: var(--main-light);
+  }
+  .about-overlay {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 120px;
+    background-color: var(--primary-background);
+  }
+  .about__icon {
+    width: 100%;
+  }
+  .about__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: var(--text-size);
+    line-height: 1.1;
+    text-transform: uppercase;
+  }
+  .about__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.7;
+    color: var(--secondary-color);
+  }
 }
-
-.page-about {
-  background-color: var(--main-light);
-}
-
-.about {
-  display: flex;
-}
-
-.about__item {
-  width: calc((100% - 90px) / 4);
-}
-.about .about__item + .about__item {
-  margin-left: 30px;
-}
-
-.about-overlay {
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
-  background-color: var(--primary-background);
-}
-
-.about__title {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-size: var(--text-size);
-  line-height: 1.1;
-  text-transform: uppercase;
-}
-
-.about__text {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 1.7;
-  color: var(--secondary-color);
-}
-
 .wedo {
   padding-top: 0;
   background-color: var(--main-light);

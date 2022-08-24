@@ -1,47 +1,88 @@
-.page-about {
-    background-color: var(--main-light);
-}
+@media screen and (max-width: 479px) {
+    .page-about {
+        background-color: var(--main-light);
+    }
 
-.about {
-    display: flex;
-}
+    .about-overlay {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 450px;
+        height: 120px;
 
-.about__item {
-    width: calc((100% - 90px) / 4);
+        background-color: var(--primary-background);
+    }
 
-    .about .about__item+& {
-        margin-left: 30px;
+    .about__icon {
+        width: 100%;
+    }
+
+    .about__title {
+        margin-top: 0;
+        margin-bottom: 10px;
+        text-align: center;
+
+        font-size: var(--text-size);
+        line-height: 1.1;
+        text-transform: uppercase;
+    }
+
+    .about__text {
+        margin-top: 0;
+        margin-bottom: 0;
+
+        line-height: 1.7;
+
+        color: var(--secondary-color);
     }
 }
 
-.about-overlay {
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 120px;
 
-    background-color: var(--primary-background);
-}
+    
 
-.about__icon {
 
-}
 
-.about__title {
-    margin-top: 0;
-    margin-bottom: 10px;
+// .about {
+//     display: flex;
+// }
 
-    font-size: var(--text-size);
-    line-height: 1.1;
-    text-transform: uppercase;
-}
+// .about__item {
+//     width: calc((100% - 90px) / 4);
 
-.about__text {
-    margin-top: 0;
-    margin-bottom: 0;
+//     .about .about__item+& {
+//         margin-left: 30px;
+//     }
+// }
 
-    line-height: 1.7;
+// .about-overlay {
+//     margin-bottom: 30px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 120px;
 
-    color: var(--secondary-color);
-}
+//     background-color: var(--primary-background);
+// }
+
+// .about__icon {
+
+// }
+
+// .about__title {
+//     margin-top: 0;
+//     margin-bottom: 10px;
+
+//     font-size: var(--text-size);
+//     line-height: 1.1;
+//     text-transform: uppercase;
+// }
+
+// .about__text {
+//     margin-top: 0;
+//     margin-bottom: 0;
+
+//     line-height: 1.7;
+
+//     color: var(--secondary-color);
+// }

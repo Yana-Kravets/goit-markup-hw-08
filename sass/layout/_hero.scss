@@ -3,7 +3,7 @@
     height: 400px;
     margin-left: auto;
     margin-right: auto;
-    padding: 200px 0;
+    padding: 118px 0;
     text-align: center;
 
     background-color: var(--secondary-background);
@@ -11,6 +11,32 @@
     background-position: center;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/studio/hero/hero-phone.jpg");
     background-size: 480px 400px;
+} 
+
+.hero-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    white-space: pre-line;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6;
+    letter-spacing: 0.06em;
+
+    color: var(--main-light);
+}
+
+@media screen and (min-width: 1200px) {
+    .hero {
+        padding: 200px 0;
+    }
+
+    .hero-title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.4;
+    }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 479px),
@@ -79,16 +105,31 @@ screen and (min-resolution: 3dppx) and (min-width: 1200px) {
     }
 }
 
-.hero-title {
-    margin-top: 0;
-    margin-bottom: 30px;
+// .hero {
+//     width: 480px;
+//     height: 400px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     padding: 200px 0;
+//     text-align: center;
 
-    white-space: pre-line;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
-    letter-spacing: 0.06em;
+//     background-color: var(--secondary-background);
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/studio/hero/hero-phone.jpg");
+//     background-size: 480px 400px;
+// }
 
-    color: var(--main-light);
-}
+// .hero-title {
+//     margin-top: 0;
+//     margin-bottom: 30px;
+
+//     white-space: pre-line;
+//     text-transform: uppercase;
+//     font-weight: 900;
+//     font-size: 44px;
+//     line-height: 1.4;
+//     letter-spacing: 0.06em;
+
+//     color: var(--main-light);
+// }
