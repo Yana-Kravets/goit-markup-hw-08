@@ -1,12 +1,14 @@
 @media screen and (max-width: 767px) {
     .mobile-menu {
         position: fixed;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
+        max-height: 796px;
         top: 0;
         left: 0;
         z-index: 1000;
         background-color: var(--main-light);
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
