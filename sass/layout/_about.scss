@@ -1,13 +1,16 @@
 .page-about {
     background-color: var(--main-light);
 }
+    
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 
-.about {
-    gap: 30px;
-
-    @media screen and (min-width: 768px) {
-        // display: flex;
-        // flex-wrap: wrap;
+    .about__item {
+        width: calc((100% - 30px) / 2);
     }
 }
 
@@ -44,14 +47,23 @@
     color: var(--secondary-color);
 }
 
-.about__item {
+@media screen and (min-width: 1200px) {
+    .about {
+        display: flex;
+        gap: 30px;
+    }
+    
+    .about__item {
+        width: calc((100% - 90px) / 4);
+    }
 }
 
- @media screen and (max-width: 767px) {
-    .about__item:not(:last-child) {
-        margin-bottom: 30px;
-    }
- }
+
+//  @media screen and (max-width: 767px) {
+//     .about__item:not(:last-child) {
+//         margin-bottom: 30px;
+//     }
+//  }
 
 
 //     .about-overlay {

@@ -2,8 +2,14 @@
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    // justify-content: center;
+
     @media screen and (max-width: 767px) {
         justify-content: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        gap: 30px;
     }
 }
 
@@ -23,18 +29,17 @@
             margin-bottom: 30px;
         }
     }
+    
+    @media screen and (max-width: 767px) {
+        max-width: 450px;
+    }
 
-    @media screen and (min-width: 768px) {
-
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: calc((100% - 30px) / 2);
     }
 
     @media screen and (min-width: 1200px) {
-    width: calc((100% - 90px) / 4);
-    margin-right: 30px;
-            
-        &:last-child {
-            margin-right: 0;
-        }
+        width: calc((100% - 90px) / 4);
     }
 }
 
