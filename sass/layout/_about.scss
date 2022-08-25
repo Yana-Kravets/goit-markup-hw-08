@@ -1,54 +1,83 @@
-@media screen and (max-width: 767px) {
-
-    .page-about {
-        padding: 60px 0;
-        background-color: var(--main-light);
-    }
-
-    .about__item {
-        margin-bottom: 30px;
-    }
-
-    .about__item:last-child {
-        margin-bottom: 0;
-    }
-
-    .about-overlay {
-        margin-bottom: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 450px;
-        height: 120px;
-
-        background-color: var(--primary-background);
-    }
-
-    .about__icon {
-        width: 100%;
-    }
-
-    .about__title {
-        margin-top: 0;
-        margin-bottom: 10px;
-        text-align: center;
-
-        font-size: var(--text-size);
-        line-height: 1.1;
-        text-transform: uppercase;
-    }
-
-    .about__text {
-        margin-top: 0;
-        margin-bottom: 0;
-
-        line-height: 1.7;
-
-        color: var(--secondary-color);
-    }
-
+.page-about {
+    background-color: var(--main-light);
 }
 
+.about {
+    gap: 30px;
+
+    @media screen and (min-width: 768px) {
+        // display: flex;
+        // flex-wrap: wrap;
+    }
+}
+
+.about-overlay {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+
+    background-color: var(--primary-background);
+}
+
+.about__icon {
+    width: 100%;
+}
+
+.about__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+
+    font-size: var(--text-size);
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.about__text {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    line-height: 1.7;
+
+    color: var(--secondary-color);
+}
+
+.about__item {
+}
+
+ @media screen and (max-width: 767px) {
+    .about__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+ }
+
+
+//     .about-overlay {
+//         max-width: 354px;
+//     }
+    
+//     .about__item {
+//         width: calc((100% - 60px) / 2);
+//         margin-right: 30px;
+//         margin-bottom: 30px;
+
+//         &:nth-child(2n) {
+//             margin-right: 0;
+//             }
+        
+//         &:nth-last-child(-n + 2) {
+//             margin-bottom: 0;
+//         }
+//     }
+// }
+
+// @media screen and (min-width: 1200px) {
+//         .about__item {
+//             width: calc((100% - 90px) / 4);
+//     }
+// }
 
     
 

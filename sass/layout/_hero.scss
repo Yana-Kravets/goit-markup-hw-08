@@ -1,5 +1,5 @@
 .hero {
-    width: 480px;
+    max-width: 480px;
     height: 400px;
     margin-left: auto;
     margin-right: auto;
@@ -49,7 +49,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .hero {
-        width: 768px;
+        max-width: 768px;
         height: 400px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/studio/hero/hero-tablet.jpg");
         background-size: 768px 400px;
@@ -76,7 +76,7 @@
 @media screen and (min-width: 1200px) {
     .hero {
         padding: 200px 0;
-        width: 1600px;
+        max-width: 1600px;
         height: 600px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/studio/hero/hero-desktop.jpg");
         background-size: 1600px 600px;

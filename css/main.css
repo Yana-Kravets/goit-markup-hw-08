@@ -68,6 +68,11 @@ body {
 .section {
   padding: 94px 0;
 }
+@media screen and (max-width: 1199px) {
+  .section {
+    padding: 60px 0;
+  }
+}
 
 .container {
   padding-left: 15px;
@@ -133,7 +138,7 @@ body {
     line-height: 0;
   }
   .mobile-nav {
-    margin-bottom: 302px;
+    margin-bottom: 75px;
   }
   .mobile-nav .mobile-nav__item + .mobile-nav__item {
     margin-top: 32px;
@@ -535,7 +540,7 @@ body {
   }
 }
 .hero {
-  width: 480px;
+  max-width: 480px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -572,7 +577,7 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
-    width: 768px;
+    max-width: 768px;
     height: 400px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/studio/hero/hero-tablet.jpg");
     background-size: 768px 400px;
@@ -591,7 +596,7 @@ body {
 @media screen and (min-width: 1200px) {
   .hero {
     padding: 200px 0;
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/studio/hero/hero-desktop.jpg");
     background-size: 1600px 600px;
@@ -614,42 +619,50 @@ body {
     line-height: 1.4;
   }
 }
+.page-about {
+  background-color: var(--main-light);
+}
+
+.about {
+  gap: 30px;
+}
+.about-overlay {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: var(--primary-background);
+}
+
+.about__icon {
+  width: 100%;
+}
+
+.about__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: var(--text-size);
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.about__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.7;
+  color: var(--secondary-color);
+}
+
 @media screen and (max-width: 767px) {
-  .page-about {
-    padding: 60px 0;
-    background-color: var(--main-light);
-  }
-  .about__item {
+  .about__item:not(:last-child) {
     margin-bottom: 30px;
   }
-  .about__item:last-child {
-    margin-bottom: 0;
-  }
-  .about-overlay {
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 450px;
-    height: 120px;
-    background-color: var(--primary-background);
-  }
-  .about__icon {
-    width: 100%;
-  }
-  .about__title {
-    margin-top: 0;
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: var(--text-size);
-    line-height: 1.1;
-    text-transform: uppercase;
-  }
-  .about__text {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 1.7;
-    color: var(--secondary-color);
+}
+@media screen and (max-width: 1199px) {
+  .wedo {
+    display: none;
   }
 }
 .wedo {
@@ -703,18 +716,39 @@ body {
 
 .team-list {
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .team-list {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .section-title {
+    margin-bottom: 30px;
+  }
 }
 
 .team-item {
-  width: calc((100% - 90px) / 4);
-  margin-right: 30px;
   background-color: var(--main-light);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-item:last-child {
-  margin-right: 0;
+@media screen and (max-width: 767px) {
+  .team-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-item {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+  }
+  .team-item:last-child {
+    margin-right: 0;
+  }
 }
 
 .team-name {
@@ -735,10 +769,15 @@ body {
 }
 
 .team-social-list {
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   gap: 10px;
   display: flex;
   justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .team-social-list {
+    padding-bottom: 30px;
+  }
 }
 
 .team-social-item {
@@ -769,9 +808,26 @@ body {
   display: flex;
   gap: 30px;
 }
+@media screen and (max-width: 1199px) {
+  .clients-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 
 .clients-item {
-  width: calc((100% - 150px) / 6);
+  width: 210px;
+  height: 92px;
+}
+@media screen and (min-width: 768px) {
+  .clients-item {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-item {
+    width: 170px;
+  }
 }
 
 .clients-link {
@@ -779,6 +835,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   fill: var(--icon-color);
@@ -904,14 +962,19 @@ body {
 .page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
   background-color: var(--secondary-background);
 }
 
 .page-footer-container {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .page-footer-container {
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 
 .page-footer-logo {
@@ -922,8 +985,13 @@ body {
   margin-top: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  .address-menu {
+    margin-bottom: 60px;
+  }
+}
 .address-menu__item {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 .address-menu__item:last-child {
   margin-bottom: 0;
@@ -956,6 +1024,11 @@ body {
   gap: 10px;
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .footer-social {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-social__item {
@@ -990,15 +1063,14 @@ body {
 
 .footer-form-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
 }
 
 .footer-form-input {
   outline: none;
   padding: 15px 16px;
-  margin-right: 12px;
-  width: 358px;
+  max-width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1009,6 +1081,16 @@ body {
 }
 .footer-form-input:focus {
   border-color: var(--accent-color);
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .footer-form-input {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer-form-input {
+    margin-bottom: 20px;
+  }
 }
 
 .footer-form-btn {

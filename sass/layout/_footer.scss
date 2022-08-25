@@ -1,15 +1,19 @@
 .page-footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    display: flex;
 
     background-color: var(--secondary-background);
 }
 
 .page-footer-container {
     display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    
+    @media screen and (min-width: 1200px) {
+        justify-content: space-between;
+        align-items: baseline;
+    }
 }
 
 .page-footer-logo {
@@ -20,8 +24,14 @@
     margin-top: 20px;
 }
 
+@media screen and (max-width: 767px) {
+    .address-menu {
+        margin-bottom: 60px;
+    }
+}
+
 .address-menu__item {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 
     &:last-child {
         margin-bottom: 0;
@@ -57,6 +67,10 @@
     gap: 10px;
     display: flex;
     justify-content: center;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
 }
 
 .footer-social__item {
@@ -82,6 +96,8 @@
     }
 }
 
+// Form
+
 .footer-form-desc {
     margin-top: 0;
     margin-bottom: 20px;
@@ -95,15 +111,14 @@
 
 .footer-form-wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
 
 .footer-form-input {
     outline: none;
     padding: 15px 16px;
-    margin-right: 12px;
-    width: 358px;
+    max-width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -114,6 +129,14 @@
 
     &:focus {
         border-color: var(--accent-color);
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        width: 450px;
+    }
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 20px;
     }
 }
 
@@ -132,3 +155,140 @@
     margin-left: 10px;
     fill: var(--main-light);
 }
+
+
+
+// .page-footer {
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+//     display: flex;
+
+//     background-color: var(--secondary-background);
+// }
+
+// .page-footer-container {
+//     display: flex;
+//     align-items: baseline;
+//     justify-content: space-between;
+// }
+
+// .page-footer-logo {
+//     color: var(--main-light);
+// }
+
+// .address {
+//     margin-top: 20px;
+// }
+
+// .address-menu__item {
+//     margin-bottom: 9px;
+
+//     &:last-child {
+//         margin-bottom: 0;
+//     }
+// }
+
+// .address-menu-opacity>a {
+//     opacity: 1;
+// }
+
+// .address-menu__contact {
+//     text-decoration: none;
+//     font-style: normal;
+//     font-weight: 400;
+//     line-height: 1.7;
+
+//     color: var(--main-light);
+//     opacity: .6;
+//     transition: color var(--transition-dur-and-func);
+// }
+
+// .footer-social-title {
+//     margin-top: 0;
+//     margin-bottom: 20px;
+//     font-size: 14px;
+//     line-height: 1, 1;
+//     text-transform: uppercase;
+
+//     color: var(--main-light);
+// }
+
+// .footer-social {
+//     gap: 10px;
+//     display: flex;
+//     justify-content: center;
+// }
+
+// .footer-social__item {
+//     width: 44px;
+//     height: 44px;
+// }
+
+// .footer-social__link {
+//     width: 100%;
+//     height: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     border-radius: 50%;
+
+//     fill: var(--main-light);
+//     background: rgba(255, 255, 255, 0.1);
+//     transition: background-color var(--transition-dur-and-func);
+
+//     &:hover,
+//     &:focus {
+//         background-color: var(--accent-color);
+//     }
+// }
+
+// .footer-form-desc {
+//     margin-top: 0;
+//     margin-bottom: 20px;
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.1;
+//     text-transform: uppercase;
+
+//     color: var(--main-light);
+// }
+
+// .footer-form-wrapper {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// .footer-form-input {
+//     outline: none;
+//     padding: 15px 16px;
+//     margin-right: 12px;
+//     width: 358px;
+//     height: 50px;
+//     border: 1px solid rgba(255, 255, 255, 0.3);
+//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//     border-radius: 4px;
+//     background-color: var(--secondary-background);
+//     color: var(--main-light);
+//     transition: border-color var(--transition-dur-and-func);
+
+//     &:focus {
+//         border-color: var(--accent-color);
+//     }
+// }
+
+// .footer-form-btn {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     min-width: 200px;
+//     height: 50px;
+// }
+
+// .footer-form-icon {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin-left: 10px;
+//     fill: var(--main-light);
+// }

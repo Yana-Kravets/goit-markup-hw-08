@@ -5,10 +5,24 @@
 .clients-list {
     display: flex;
     gap: 30px;
+
+    @media screen and (max-width: 1199px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .clients-item {
-    width: calc((100% - 150px) / 6);
+    width: 210px;
+    height: 92px;
+
+    @media screen and (min-width: 768px) {
+        width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+    }
 }
 
 .clients-link {
@@ -16,6 +30,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
 
     border: 1px solid var(--icon-color);
     border-radius: 4px;
