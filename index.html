@@ -6,6 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio Эффективные решения для вашего бизнеса</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -67,47 +76,44 @@
             </button>
             
             <div class="mobile-menu" data-menu>
-                <div class="mobile-menu-container">
-                    <button class="mobile-menu__close-btn" data-menu-close>
-                        <svg class="mobile-menu__close-icon" width="40" height="40">
-                            <use href="./images/icons.svg#icon-close-modal"></use>
-                        </svg>
-                    </button>
-                    <ul class="mobile-nav list">
-                        <li class="mobile-nav__item">
-                            <a class="mobile-nav__link mobile-nav__link_active" href="./index.html">Студия</a>
-                        </li>
-                        <li class="mobile-nav__item">
-                            <a class="mobile-nav__link" href="./portfolio.html">Портфолио</a>
-                        </li>
-                        <li class="mobile-nav__item">
-                            <a class="mobile-nav__link" href="./index.html">Контакты</a>
-                        </li>
-                    </ul>
-                    <ul class="mobile-contact list">
-                        <li class="mobile-contact__item">
-                            <a class="mobile-contact__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                        </li>
-                        <li class="mobile-contact__item">
-                            <a class="mobile-contact__phone link"
-                            href="tel:+380961111111">+38 096 111 11 11</a>
-                        </li>
-                    </ul>
-                    <ul class="mobile-social list">
-                        <li class="mobile-social__item">
-                            <a class="mobile-social__link link" href="#">Instagram</a>
-                        </li>
-                        <li class="mobile-social__item">
-                            <a class="mobile-social__link link" href="#">Twitter</a>
-                        </li>
-                        <li class="mobile-social__item">
-                            <a class="mobile-social__link link" href="#">Facebook</a>
-                        </li>
-                        <li class="mobile-social__item">
-                            <a class="mobile-social__link link" href="#">LinkedIn</a>
-                        </li>
-                    </ul>
-                </div>
+                <button class="mobile-menu__close-btn" data-menu-close>
+                    <svg class="mobile-menu__close-icon" width="40" height="40">
+                        <use href="./images/icons.svg#icon-close-modal"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-nav list">
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link mobile-nav__link_active" href="./index.html">Студия</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link" href="./index.html">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="mobile-contact list">
+                    <li class="mobile-contact__item">
+                        <a class="mobile-contact__phone link" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-contact__item">
+                        <a class="mobile-contact__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-social list">
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link link" href="#">Instagram</a>
+                    </li>
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link link" href="#">Twitter</a>
+                    </li>
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link link" href="#">Facebook</a>
+                    </li>
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link link" href="#">LinkedIn</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
@@ -553,6 +559,7 @@
                     <span class="modal-form-input-wrapper">
                         <input 
                         type="text" 
+                        class="modal-form-input"
                         name="user-name"
                         required
                         pattern="[a-zA-Zа-яА-яіїІЇ]]+"
