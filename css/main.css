@@ -111,8 +111,6 @@ body {
   z-index: 1000;
   background-color: var(--main-light);
   box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
-  flex-direction: column;
-  right: 0;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -149,7 +147,7 @@ body {
 }
 
 .mobile-nav {
-  margin-bottom: 250px;
+  margin-bottom: 100px;
 }
 
 .mobile-nav .mobile-nav__item + .mobile-nav__item {
@@ -181,19 +179,20 @@ body {
   margin-bottom: 32px;
 }
 
-.mobile-contact__link {
-  height: 100%;
+.mobile-contact__mail {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mobile-contact__phone {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
-  transition: font-size 250ms var(--transition-dur-and-func), color 250ms var(--transition-dur-and-func);
-}
-
-.mobile-contact__link:hover,
-.mobile-contact__link:focus {
-  font-size: 34px;
 }
 
 .mobile-social {
