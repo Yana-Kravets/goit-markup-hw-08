@@ -14,15 +14,15 @@
 
     @media screen and (max-width: 767px) {
     
-        @media screen and (min-device-pixel-ratio: 2) and (min-width: 480px),
-        screen and (min-resolution: 192dpi) and (min-width: 480px),
-        screen and (min-resolution: 2dppx) and (min-width: 480px) {
+        @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+        screen and (min-resolution: 192dpi) and (max-width: 767px),
+        screen and (min-resolution: 2dppx) and (max-width: 767px) {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/studio/hero/hero-phone@2x.jpg");
         }
 
-        @media screen and (min-device-pixel-ratio: 3) and (min-width: 480px),
-        screen and (min-resolution: 288dpi) and (min-width: 480px),
-        screen and (min-resolution: 3dppx) and (min-width: 480px) {
+        @media screen and (min-device-pixel-ratio: 3) and (max-width: 767px),
+        screen and (min-resolution: 288dpi) and (max-width: 767px),
+        screen and (min-resolution: 3dppx) and (max-width: 767px) {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/studio/hero/hero-phone@3x.jpg");
         }
     }
@@ -82,11 +82,8 @@
     color: var(--main-light);
 
     @media screen and (min-width: 1200px) {
-        .hero-title {
-            font-weight: 900;
-            font-size: 44px;
-            line-height: 1.4;
-        }
+        font-size: 44px;
+        line-height: 1.36;
     }
 }
 

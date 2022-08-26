@@ -24,16 +24,21 @@
     .contact-list {
         display: none;
     }
+
+    .page-header {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}
+
+.page-header {
+    border-bottom: 1px solid var(--header-border);
+    background-color: var(--main-light);
 }
 
 .page-header-container {
     display: flex;
     align-items: center;
-}
-
-.page-header {
-    padding-top: 16px;
-    padding-bottom: 16px;
 }
 
 .mobile-menu-open {
